@@ -1,0 +1,386 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#all-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 650px;
+}
+
+#boobs {
+  display: flex;
+  background-color: #f7cfd3;
+  height: 200px;
+  width: 325px;
+}
+
+.left-boob {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightpink;
+  margin: 50px 0 0 50px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.right-boob {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightpink;
+  margin: 50px 0 0 20px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.nipple {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: palevioletred;
+  align-self: center;
+}
+
+.star {
+  position: absolute;
+  margin: 5px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle at top left, transparent 76px, gold 0) top
+      left,
+    radial-gradient(circle at top right, transparent 76px, gold 0) top right,
+    radial-gradient(circle at bottom left, transparent 76px, gold 0) bottom left,
+    radial-gradient(circle at bottom right, transparent 76px, gold 0) bottom
+      right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  animation: blink 1s infinite;
+}
+
+.star2 {
+  position: absolute;
+  margin: 75px 0 0 200px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle at top left, transparent 76px, gold 0) top
+      left,
+    radial-gradient(circle at top right, transparent 76px, gold 0) top right,
+    radial-gradient(circle at bottom left, transparent 76px, gold 0) bottom left,
+    radial-gradient(circle at bottom right, transparent 76px, gold 0) bottom
+      right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+.star2 {
+  animation: blink2 1s infinite;
+}
+
+@keyframes blink2 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100;
+  }
+}
+
+#cloud {
+  width: 325px;
+  height: 200px;
+  background-color: #3da995;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.bla {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  animation: shake 0.8s infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.cloud-top {
+  position: absolute;
+  margin-top: 14px;
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.cloud-right {
+  position: absolute;
+  margin: 50px 0 0 60px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.cloud-left {
+  position: absolute;
+  margin: 50px 0 0 -60px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.cloud-bottom {
+  position: absolute;
+  margin: 50px 0 0 0;
+  width: 160px;
+  height: 80px;
+  border-radius: 20%;
+  background-color: white;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.rain-drop1 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: lightblue;
+  margin: 140px 0 0 0;
+
+  animation: rain1 1s infinite;
+}
+
+@keyframes rain1 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100;
+  }
+}
+
+.rain-drop2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: lightblue;
+  margin: 160px 0 0 0;
+
+  animation: rain2 3s infinite;
+}
+
+@keyframes rain2 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100;
+  }
+}
+
+.rain-drop3 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: lightblue;
+  margin: 140px 0 0 0;
+
+  animation: rain3 2s infinite;
+}
+
+@keyframes rain3 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100;
+  }
+}
+
+#bowling-ball {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: lightblue;
+  width: 325px;
+  height: 200px;
+}
+
+.ball {
+  align-self: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #1e1f1f;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  animation: spin 1.5s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+.first-hole {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 25px 5px 0 0;
+}
+
+.second-hole {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 25px 20px 0 0;
+}
+
+.third-hole {
+  display: inline;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 10px 0 0 -40px;
+}
+
+#bear {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #b34054;
+  width: 325px;
+  height: 200px;
+}
+
+.head {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: tan;
+  align-self: center;
+  display: flex;
+}
+
+.left-ear {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50% 0 0;
+  background-color: tan;
+  transform: rotate(-20deg);
+}
+
+.right-ear {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50% 0 0;
+  background-color: tan;
+  transform: rotate(20deg);
+  margin: 0 0 0 65px;
+}
+
+.snout {
+  align-self: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 80% 80% 40% 40%;
+  background-color: #1e1f1f;
+  margin: 10px 0 0 60px;
+}
+
+.left-eye {
+  position: absolute;
+  width: 20px;
+  border-bottom: 4px solid #1e1f1f;
+  border-radius: 20%;
+  margin: 60px 0 0 90px;
+}
+
+.right-eye {
+  position: absolute;
+  width: 20px;
+  border-bottom: 4px solid #1e1f1f;
+  border-radius: 20%;
+  margin: 60px 0 0 30px;
+}
+
+.mouth {
+  align-self: center;
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #1e1f1f;
+  margin: 35px 0 0 58px;
+  z-index: 10;
+}
+
+.tongue {
+  align-self: center;
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  border-radius: 0 0 40% 40%;
+  background-color: palevioletred;
+  margin: 50px 0 0 58px;
+
+  animation: stick 2s infinite;
+}
+
+@keyframes stick {
+  0%,
+  100% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0;
+  }
+}
